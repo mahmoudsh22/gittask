@@ -1,0 +1,21 @@
+int bazzer = 3;
+
+void setup() {
+    Serial.begin(9600);
+    pinMode(bazzer,  OUTPUT);
+}
+
+void loop() {
+    int value = analogRead(A0);
+
+    Serial.println("Analog  Value: ");
+    Serial.println(value);
+    
+    if (value > 500) {
+       tone(bazzer, 1000); 
+    } else {
+         noTone(bazzer); 
+    }
+    
+    delay(250);
+}

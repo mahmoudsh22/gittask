@@ -1,0 +1,12 @@
+#include <Servo.h>
+
+Servo servoMotor;  
+
+void setup() {
+  servoMotor.attach(9);  
+}
+
+void loop() {
+  servoMotor.write(60);  
+  delay(2000);  
+}
