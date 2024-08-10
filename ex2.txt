@@ -1,0 +1,30 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+   int n,i,number,m=-1;
+    cin>>n;
+    int ar[n];
+    for(i=0;i<n;i++){
+        cin>>ar[i];
+    }
+   cin>>number;
+    for(i=0;i<n;i++){
+        if(ar[i]==number){
+            m=i;
+        }
+    }
+    if(m!=-1){
+        cout<<m<<endl;
+    }
+    else{
+         cout<<m<<endl;
+    }
+
+    return 0;
+}

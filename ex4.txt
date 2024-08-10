@@ -1,0 +1,53 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int rows;
+  int cols;
+  cin >> rows;
+  cin >> cols;
+  int justice_league=0;
+  int Villains=0;
+
+  int arr1[rows][cols];
+  for (int i = 0; i < rows; ++i) {
+    for (int j = 0; j < cols; ++j) {
+      cin >> arr1[i][j];
+    }
+  }
+
+  int arr2[rows][cols];
+  for (int i = 0; i < rows; ++i) {
+    for (int j = 0; j < cols; ++j) {
+      cin >> arr2[i][j];
+    }
+  }
+
+  for (int i = 0; i < rows; ++i) {
+    for (int j = 0; j < cols; ++j) {
+      if(arr1[i][j] > arr2[i][j]){
+       justice_league++;
+
+      }else if(arr1[i][j] < arr2[i][j]){
+      Villains++;
+
+    }else{
+    Villains++;
+    justice_league++;}
+    }
+  }
+
+  if(justice_league>Villains){
+    cout << "Justice League";
+  }else if(justice_league<Villains){
+    cout << "Villains";
+  }else{
+    cout << "Tie";
+  } 
+    return 0;
+}
