@@ -1,0 +1,28 @@
+we can use 436 LED
+becuase, each LED take 0.1A and total volt wil be 33v and total current =1440/33=43.63
+number of led=43.63/0.1=436 LED 
+
+
+
+
+
+
+
+
+
+i think we can use lithium-ion because it's weight light and small size and not very expensive 
+the total power for motors=4*12*4=192w    and power for camera =0.5*12=6w
+total power=198w  and energy=198*0.5=99wh   for safety use battery whith140wh and 12v
+     
+
+
+1- the resistance of 0.5ohm for 3.7v battery not responsble because it is very high and will take high  power from battery
+2-we can measure capacity of battery by discharge it while measure 
+
+
+
+
+
+we have power of any instrument and multiply it with time to get energy in wh
+and cost detrmine with pound/wh 
+we can reduce it by use instrument with low power
